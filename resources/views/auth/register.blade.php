@@ -36,6 +36,104 @@
                                     </span>
                                 @endif
                             </div>
+                        </div>                      
+
+                        <div class="form-group{{ $errors->has('branch') ? ' has-error' : '' }}">
+                            <label for="branch" class="col-md-4 control-label">Branch</label>
+
+                            <div class="col-md-6">
+                                <input id="branch" type="branch" class="form-control" name="branch" value="{{ old('branch') }}" required>
+
+                                @if ($errors->has('branch'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('branch') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('department') ? ' has-error' : '' }}">
+                            <label for="department" class="col-md-4 control-label">Department</label>
+
+                            <div class="col-md-6">
+                                <input id="department" type="department" class="form-control" name="department" value="{{ old('department') }}" required>
+
+                                @if ($errors->has('department'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('department') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('class') ? ' has-error' : '' }}">
+                            <label for="class" class="col-md-4 control-label">Class</label>
+
+                            <div class="col-md-6">
+                                <input id="class" type="class" class="form-control" name="class" value="{{ old('class') }}" required>
+
+                                @if ($errors->has('class'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('class') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('division') ? ' has-error' : '' }}">
+                            <label for="division" class="col-md-4 control-label">Division</label>
+
+                            <div class="col-md-6">
+                                <input id="division" type="division" class="form-control" name="division" value="{{ old('division') }}" required>
+
+                                @if ($errors->has('division'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('division') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('roll_number') ? ' has-error' : '' }}">
+                            <label for="roll_number" class="col-md-4 control-label">Roll Number</label>
+
+                            <div class="col-md-6">
+                                <input id="roll_number" type="roll_number" class="form-control" name="roll_number" value="{{ old('roll_number') }}" required>
+
+                                @if ($errors->has('roll_number'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('roll_number') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('mobile_number') ? ' has-error' : '' }}">
+                            <label for="mobile_number" class="col-md-4 control-label">Mobile Number</label>
+
+                            <div class="col-md-6">
+                                <input id="mobile_number" type="mobile_number" class="form-control" name="mobile_number" value="{{ old('mobile_number') }}" required>
+
+                                @if ($errors->has('mobile_number'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('mobile_number') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('alternatenumber') ? ' has-error' : '' }}">
+                            <label for="alternatenumber" class="col-md-4 control-label">Alternate mobile Number</label>
+
+                            <div class="col-md-6">
+                                <input id="alternatenumber" type="alternatenumber" class="form-control" name="alternatenumber" value="{{ old('alternatenumber') }}">
+
+                                @if ($errors->has('alternatenumber'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('alternatenumber') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
                         </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">

@@ -10,6 +10,10 @@ class Organization extends Model
     {
     	return $this->hasMany(Event::class);
     }
+    public function users()
+    {
+    	return $this->belongsToMany(User::class);
+    }
     public function college()
     {
     	return $this->belongsTo(College::class);

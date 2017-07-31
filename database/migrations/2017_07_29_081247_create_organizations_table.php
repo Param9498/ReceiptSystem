@@ -15,6 +15,7 @@ class CreateOrganizationsTable extends Migration
     {
         Schema::create('organizations', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('college_id');
             $table->string('name');
             $table->timestamps();
         });

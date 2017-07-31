@@ -35,4 +35,16 @@ class User extends Authenticatable
     {
         return $this->hasOne(Profile::class);
     }
+    public function events()
+    {
+        return $this->belongsToMany(Event::class);
+    }
+    public function organizations()
+    {
+        return $this->belongsToMany(Organization::class);
+    }
+    public function college()
+    {
+        return $this->belongsTo(College::class);
+    }
 }
