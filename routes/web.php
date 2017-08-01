@@ -92,6 +92,4 @@ Route::get('/admin', function(){
 		})->name('addEvent')->middleware('OrganizationSelected');
 
 		Route::post('/admin/addEvent', 'OrganizationController@addNewEvent')->name('addEvent')->middleware('OrganizationSelected');
-
-
-//	}
+//	}mmmmmm
