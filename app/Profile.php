@@ -8,7 +8,7 @@ class Profile extends Model
 {
 	
 	protected $fillable = [
-        'branch', 'department', 'class', 'division', 'roll_number', 'mobile_number', 'user_id', 'college_id'
+        'branch', 'department', 'class', 'division', 'roll_number', 'mobile_number', 'user_id', 'college_id', 'alternate_number'
     ];
 
     public function user()

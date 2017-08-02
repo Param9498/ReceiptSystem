@@ -76,6 +76,7 @@ class RegisterController extends Controller
             'class' => $data['class'],
             'division' => $data['division'],
             'mobile_number' => $data['mobile_number'],
+            'alternate_number' => $data['alternate_number'],
             'roll_number' => $data['roll_number'],
             'user_id' => $data['user_id'],
         ]);

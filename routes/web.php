@@ -12,6 +12,7 @@
 */
 
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Encryption\DecryptException;
 
 Route::get('/', function () {
     return view('welcome');
@@ -73,17 +74,42 @@ Route::get('/admin', function(){
 		Route::post('/admin/dashboard', function(Request $request){
 			$organization_id = $request->organization;
 			session(['organizationSelectedByAdmin' => $organization_id]);
-			$organization = \App\Organization::where('id', $organization_id)->first();
-			return view('admin.organizationAdmin', compact('organization'));
+			$organizations = \App\Organization::where('id', session('organizationSelectedByAdmin'))->get();
+			return view('admin.organizationAdmin', compact('organizations'));
 		});
+
+		Route::get('/admin/dashboard', function(){
+			
+			if(session('organizationSelectedByAdmin'))
+			{	
+				$organizations = \App\Organization::where('id', session('organizationSelectedByAdmin'))->get();
+				return view('admin.organizationAdmin', compact('organizations'));
+			}
+			else 
+				return redirect()->route('admin');
+		})->middleware('OrganizationSelected');
 		
 		Route::get('/admin/addRole', function(){
-			$events = \App\Event::where('organization_id', session('organizationSelectedByAdmin'))->get();
+			$organizations = \App\Organization::where('id', session('organizationSelectedByAdmin'))->get();
 			//$roles = $events->roles()->get();
-			return view('admin.addRole', compact('events'));
+			return view('admin.addRole', compact('organizations'));
 		})->name('addRole')->middleware('OrganizationSelected');
 
 		Route::post('/admin/addRole', 'RoleController@addNewRole')->name('addRole')->middleware('OrganizationSelected');
+
+		Route::post('/admin/addRole/{role_id}', 'RoleController@addRoleProfile')->middleware('OrganizationSelected');
+		Route::get('/admin/addRole/{role_id}', function($role_id){
+			$role_id = decrypt($role_id);
+			$role = \App\Role::where('id', $role_id)->first();
+			$users = $role->users()->get();
+			$profiles = [];
+			foreach ($users as $user) {
+				array_push($profiles, $user->profile()->first());
+			}
+			return view('admin.addRoleMember', compact('role', 'users', 'profiles'));
+		})->middleware('OrganizationSelected');
+
+
 
 
 		Route::get('/admin/addEvent', function(){
@@ -92,4 +118,9 @@ Route::get('/admin', function(){
 		})->name('addEvent')->middleware('OrganizationSelected');
 
 		Route::post('/admin/addEvent', 'OrganizationController@addNewEvent')->name('addEvent')->middleware('OrganizationSelected');
-//	}mmmmmm
+
+		Route::get('/admin/events', function(){
+			$events = \App\Event::where('organization_id', session('organizationSelectedByAdmin'))->get();
+			return $events->toJson();
+		});
+//	}

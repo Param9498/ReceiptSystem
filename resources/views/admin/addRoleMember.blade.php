@@ -5,9 +5,37 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+                <div class="panel-heading">Register {{ $role->name }}</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('addOrganizationAdmin') }}">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Name</th>
+                            <th>Branch</th>
+                            <th>Department</th>
+                            <th>Class</th> 
+                            <th>Division</th>
+                            <th>Mobile Number</th>
+                            <th>Alternate Mobile Number</th>
+                            <th>Email ID</th>                
+                        </tr>
+                        <?php $i = 1; ?>
+                        @foreach($users as $user)
+                            <tr>
+                                <td>{{$i}}</td>
+                                <td>{{ $user->name }}</td>
+                                <td>{{ $profiles[$i-1]->branch }}</td>
+                                <td>{{ $profiles[$i-1]->department }}</td>
+                                <td>{{ $profiles[$i-1]->class }}</td>
+                                <td>{{ $profiles[$i-1]->division }}</td>
+                                <td>{{ $profiles[$i-1]->mobile_number }}</td>
+                                <td>{{ $profiles[$i-1]->alternate_number }}</td>
+                                <td>{{ $user->email }}</td>
+                            </tr>
+                            <?php $i++; ?>
+                        @endforeach
+                    </table>
+                    <form class="form-horizontal" method="POST" action="{{ url('/admin/addRole/'.$role->id) }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -38,7 +66,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        {{--<div class="form-group">
                             <label for="college" class="col-md-4 control-label">College</label>
 
                             <div class="col-md-6">
@@ -69,7 +97,7 @@
                                 </select>
 
                             </div>
-                        </div>                       
+                        </div> --}}                      
 
                         <div class="form-group{{ $errors->has('branch') ? ' has-error' : '' }}">
                             <label for="branch" class="col-md-4 control-label">Branch</label>

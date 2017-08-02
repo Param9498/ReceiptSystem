@@ -7,14 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Role extends Model
 {
 	protected $fillable = [
-        'name', 'event_id', 'privilege_level'
+        'name', 'organization_id', 'privilege_level'
     ];
     public function users()
     {
     	return $this->belongsToMany(User::class);
     }
-    public function Event()
+    public function organization()
     {
-    	return $this->belongsTo(Event::class);
+    	return $this->belongsTo(Organization::class);
     }
 }

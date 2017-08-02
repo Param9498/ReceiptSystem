@@ -16,11 +16,11 @@
                             <th>Privilege Level</th>                         
                         </tr>
                         <?php $i = 1; ?>
-                        @foreach($events as $event)
-                            @foreach($event->roles()->get(); as $role)
+                        @foreach($organizations as $organization)
+                            @foreach($organization->roles()->get() as $role)
                             <tr>
                                 <td>{{$i}}</td>
-                                <td>{{ $event->name }}</td>
+                                <td>{{ $organization->name }}</td>
                                 <td>{{ $role->name }}</td>
                                 <td>{{ $role->privilege_level }}</td>
                             </tr>
@@ -30,20 +30,20 @@
                     <form class="form-horizontal" method="POST" action="">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('event') ? ' has-error' : '' }}">
-                            <label for="event" class="col-md-4 control-label">Event Name</label>
+                        <div class="form-group{{ $errors->has('organization') ? ' has-error' : '' }}">
+                            <label for="organization" class="col-md-4 control-label">Organization Name</label>
 
                             <div class="col-md-6">
 
-                                <select id="event" class="form-control" name="event" required autofocus>
-                                    @foreach($events as $event)
-                                        <option value="{{$event->id}}">{{$event->name}}</option>
+                                <select id="organization" class="form-control" name="organization" required autofocus>
+                                    @foreach($organizations as $organization)
+                                        <option value="{{$organization->id}}">{{$organization->name}}</option>
                                     @endforeach
                                 </select>
 
-                                @if ($errors->has('event'))
+                                @if ($errors->has('organization'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('event') }}</strong>
+                                        <strong>{{ $errors->first('organization') }}</strong>
                                     </span>
                                 @endif
                             </div>

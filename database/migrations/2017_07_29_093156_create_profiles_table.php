@@ -21,6 +21,7 @@ class CreateProfilesTable extends Migration
             $table->string('class');
             $table->integer('division');
             $table->bigInteger('mobile_number');
+            $table->bigInteger('alternate_number');
             $table->string('roll_number');
             $table->timestamps();
         });

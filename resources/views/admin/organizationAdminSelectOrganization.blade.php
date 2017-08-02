@@ -11,7 +11,7 @@
                     {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                            <label for="email" class="col-md-4 control-label">Select Organization</label>
 
                             <div class="col-md-6">
                                 <select class="form-control" name ="organization" id = "organization">

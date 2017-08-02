@@ -122,15 +122,15 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('alternatenumber') ? ' has-error' : '' }}">
-                            <label for="alternatenumber" class="col-md-4 control-label">Alternate mobile Number</label>
+                        <div class="form-group{{ $errors->has('alternate_number') ? ' has-error' : '' }}">
+                            <label for="alternate_number" class="col-md-4 control-label">Alternate mobile Number</label>
 
                             <div class="col-md-6">
-                                <input id="alternatenumber" type="alternatenumber" class="form-control" name="alternatenumber" value="{{ old('alternatenumber') }}">
+                                <input id="alternate_number" type="alternate_number" class="form-control" name="alternate_number" value="{{ old('alternate_number') }}">
 
-                                @if ($errors->has('alternatenumber'))
+                                @if ($errors->has('alternate_number'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('alternatenumber') }}</strong>
+                                        <strong>{{ $errors->first('alternate_number') }}</strong>
                                     </span>
                                 @endif
                             </div>

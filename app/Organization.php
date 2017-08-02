@@ -18,4 +18,8 @@ class Organization extends Model
     {
     	return $this->belongsTo(College::class);
     }
+    public function roles()
+    {
+        return $this->hasMany(Role::class);
+    }
 }

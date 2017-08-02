@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-    public function roles()
-    {
-    	return $this->hasMany(Role::class);
-    }
+    protected $table = 'events';
+
+    protected $with = array('Organization');
+
     public function organization()
     {
     	return $this->belongsTo(Organization::class);
