@@ -47,4 +47,8 @@ class User extends Authenticatable
     {
         return $this->belongsTo(College::class);
     }
+    public function receipts()
+    {
+        return $this->hasMany(Receipt::class);
+    }
 }

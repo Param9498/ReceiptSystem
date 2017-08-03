@@ -124,3 +124,43 @@ Route::get('/admin', function(){
 			return $events->toJson();
 		});
 //	}
+
+// Receipt Route:
+
+//	{
+
+		Route::get('/newReceipt', function(){
+			if(!session('eventSelectedByUserForReceipt'))
+			{
+				return redirect()->route('changeEvent');
+			}
+			$events = \App\Event::where('organization_id', session('organizationSelectedByAdmin'))->get();
+			return view('Receipt.addNew');
+		})->name('newReceiptView');
+
+		Route::get('/changeEvent', function(){
+			$user = \Auth::user();
+			$organizations = \App\Organization::where('college_id', $user->college()->first()->id)->get();
+			$events = [];
+			foreach ($organizations as $organization) {
+				array_push($events, $organization->events()->get());
+			}
+			return view('Receipt.changeEvent', compact('organizations', 'events'));
+		})->name('changeEvent');
+
+		Route::post('/saveEventNameForUser', function(Request $request){
+			session(['eventSelectedByUserForReceipt' => $request->event]);
+			return redirect()->route('newReceiptView');
+		});
+
+		Route::post('/newReceipt', 'ReceiptController@saveReceipt')->name('saveReceipt');
+
+//	}
+
+
+
+//JSON DATA - API
+
+//	{
+		
+//	}
