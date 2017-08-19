@@ -134,7 +134,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Register
+                                    Save
                                 </button>
                                 <a href="{{ route('changeEvent') }}">Change Event</a>
                             </div>

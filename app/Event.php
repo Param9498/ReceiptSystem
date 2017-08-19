@@ -18,4 +18,8 @@ class Event extends Model
     {
     	return $this->belongsToMany(User::class);
     }
+    public function receipts()
+    {
+        return $this->hasMany(Receipt::class);
+    }
 }

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Organization extends Model
 {
+    protected $with = array('College');
     public function events()
     {
     	return $this->hasMany(Event::class);
