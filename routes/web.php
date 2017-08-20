@@ -134,14 +134,27 @@ Route::get('/admin', function(){
 		Route::get('/admin/addEvent', function(){
 			$events = \App\Event::where('organization_id', session('organizationSelectedByAdmin'))->get();
 			return view('admin.addEvent', compact('events'));
-		})->name('addEvent')->middleware('OrganizationSelected');
+		})->name('addEvent')->middleware('OrganizationSelected', 'auth');
 
-		Route::post('/admin/addEvent', 'OrganizationController@addNewEvent')->name('addEvent')->middleware('OrganizationSelected');
+		Route::post('/admin/addEvent', 'OrganizationController@addNewEvent')->name('addEvent')->middleware('OrganizationSelected', 'auth');
+		/*Route::post('/admin/addEvent', function(Request $request){
+			$numberInGroups = $request->noOfPeople;
+			$numberInGroups = json_encode($numberInGroups);
+			dd($numberInGroups);
+		})->name('addEvent')->middleware('OrganizationSelected');*/
 
 		Route::get('/admin/events', function(){
 			$events = \App\Event::where('organization_id', session('organizationSelectedByAdmin'))->get();
 			return $events->toJson();
 		});
+
+		Route::get('/admin/ReceiptsHandlePrivileges', function(){
+			$organizations = \App\Organization::where('id', session('organizationSelectedByAdmin'))->get();
+			//$roles = $events->roles()->get();
+			return view('admin.receiptsHandlePrivileges', compact('organizations'));
+		})->name('addReceiptsHandlePrivileges')->middleware('OrganizationSelected', 'auth');
+
+		Route::post('/admin/ReceiptsHandlePrivileges', 'OrganizationController@addReceiptsHandlePrivileges')->name('addReceiptsHandlePrivileges')->middleware('OrganizationSelected', 'auth');
 //	}
 
 // Receipt Route:
@@ -149,31 +162,106 @@ Route::get('/admin', function(){
 //	{
 
 		Route::get('/newReceipt', function(){
-			if(!session('eventSelectedByUserForReceipt'))
-			{
-				return redirect()->route('changeEvent');
-			}
-			$events = \App\Event::where('organization_id', session('organizationSelectedByAdmin'))->get();
-			return view('Receipt.addNew');
-		})->name('newReceiptView');
+			//$events = \App\Event::where('organization_id', session('organizationSelectedByAdmin'))->get();
+			$event = \App\Event::where('id', session('eventSelectedByUserForReceipt'))->first();
+			return view('Receipt.addNew', compact('event'));
+		})->name('newReceiptView')->middleware('auth', 'ChangeEvent');
 
 		Route::get('/changeEvent', function(){
 			$user = \Auth::user();
-			$organizations = \App\Organization::where('college_id', $user->college()->first()->id)->get();
+			//$organizations = \App\Organization::where('college_id', $user->college()->first()->id)->get();
+			$organizations = $user->organizations;
 			$events = [];
 			foreach ($organizations as $organization) {
 				array_push($events, $organization->events()->get());
 			}
 			return view('Receipt.changeEvent', compact('organizations', 'events'));
-		})->name('changeEvent');
+		})->name('changeEvent')->middleware('auth');
 
 		Route::post('/saveEventNameForUser', function(Request $request){
 			session(['eventSelectedByUserForReceipt' => $request->event]);
-			return redirect()->route('newReceiptView');
-		});
+			return redirect()->route('receiptMaster');
+		})->middleware('auth');
 
-		Route::post('/newReceipt', 'ReceiptController@saveReceipt')->name('saveReceipt');
+		Route::post('/newReceipt', 'ReceiptController@saveReceipt')->name('saveReceipt')->middleware('auth', 'ChangeEvent');
 
+		/*Route::get('/viewReceipts', function(){
+			return view('Receipt.viewAll');
+		})->middleware('auth');*/
+
+		Route::get('/amountToBeSubmitted', function(){
+			if(!session('eventSelectedByUserForReceipt'))
+			{
+				return redirect()->route('changeEvent');
+			}
+			$event = \App\Event::where('id', session('eventSelectedByUserForReceipt'))->first();
+			return view('Receipt.amountToBeSubmitted', compact('event'));
+		})->name('amountToBeSubmitted')->middleware('auth', 'ChangeEvent');
+
+
+
+
+
+		Route::get('/Receipts/FullyPaid',function(){
+			$event = \App\Event::where('id', session('eventSelectedByUserForReceipt'))->first();
+			$receipts = \App\Receipt::where('event_id', $event->id)->get();
+			return view('Receipt.viewFullyPaid', compact('event', 'receipts'));
+			//return $receipts;
+		})->name('viewFullyPaid')->middleware('auth', 'ChangeEvent');
+
+		Route::get('/Receipts/NotFullyPaid',function(){
+			$event = \App\Event::where('id', session('eventSelectedByUserForReceipt'))->first();
+			$receipts = \App\Receipt::where('event_id', $event->id)->get();
+			return view('Receipt.viewNotFullyPaid', compact('event', 'receipts'));
+		})->name('viewNotFullyPaid')->middleware('auth', 'ChangeEvent');
+
+
+		Route::get('/editReceipt/singular/{i}', function($i){
+			$receipt = \App\Receipt::where('id', $i)->first();
+			$amountPaidPreviously = $receipt->amount;
+			return view('Receipt.editAmountPaid', compact('amountPaidPreviously'));
+		})->middleware('auth', 'ChangeEvent');
+
+		Route::post('/editReceipt/singular/{i}', function($i, Request $request){
+			$receipt = \App\Receipt::where('id', $i)->first();
+			$user_amount = new \App\UserAmount();
+			$user_amount->user_id = \Auth::user()->id;
+			$user_amount->amount_collected = $request->amount - $receipt->amount;
+			$user_amount->event_id = session('eventSelectedByUserForReceipt');
+			$user_amount->save();
+			$receipt->amount = $request->amount;
+			$receipt->save();
+			return redirect()->route('viewFullyPaid');
+		})->middleware('auth', 'ChangeEvent');
+
+		Route::get('/editReceipt/multiple/{i}', function($i){
+			$receipts = \App\Receipt::where('group_id', $i)->get();
+			$amountPaidPreviously = $receipts[0]->amount;
+			return view('Receipt.editAmountPaid', compact('amountPaidPreviously'));
+		})->middleware('auth', 'ChangeEvent');
+
+		Route::post('/editReceipt/multiple/{i}', function($i, Request $request){
+			$receipts = \App\Receipt::where('group_id', $i)->get();
+			$user_amount = new \App\UserAmount();
+			$user_amount->user_id = \Auth::user()->id;
+			$user_amount->amount_collected = $request->amount - $receipts[0]->amount;
+			$user_amount->event_id = session('eventSelectedByUserForReceipt');
+			$user_amount->save();
+			foreach ($receipts as $receipt) {
+				$receipt->amount = $request->amount;
+				$receipt->save();
+			}
+			return redirect()->route('viewFullyPaid');
+		})->middleware('auth', 'ChangeEvent');
+
+
+		Route::get('/Receipts/DateWisePayment', function(){
+			return view('Receipt.dateWisePayment');
+		})->name('dateWisePayment')->middleware('auth', 'ChangeEvent', 'ReceiptAdmin');
+
+		Route::get('/Receipts/master', function(){
+			return view('Receipt.receiptMaster');
+		})->name('receiptMaster')->middleware('auth', 'ChangeEvent');
 //	}
 
 

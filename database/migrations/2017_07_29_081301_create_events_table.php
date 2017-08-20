@@ -17,6 +17,9 @@ class CreateEventsTable extends Migration
             $table->increments('id');
             $table->integer('organization_id');
             $table->string('name');
+            $table->integer('pricePerPerson');
+            $table->string('numberInGroups');
+            $table->string('priceForGroup');
             $table->timestamps();
         });
     }

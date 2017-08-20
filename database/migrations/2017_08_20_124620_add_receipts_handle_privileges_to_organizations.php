@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRoleUserTable extends Migration
+class AddReceiptsHandlePrivilegesToOrganizations extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,8 @@ class CreateRoleUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('role_user', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('user_id');
-            $table->integer('role_id');
+        Schema::table('organizations', function (Blueprint $table) {
+            $table->string('receipts_handle_privileges')->nullable();
         });
     }
 
@@ -27,6 +25,8 @@ class CreateRoleUserTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('role_user');
+        Schema::table('organizations', function (Blueprint $table) {
+            $table->dropColumn('receipts_handle_privileges');
+        });
     }
 }

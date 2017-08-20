@@ -46,6 +46,40 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <!--<li><a href="{{ route('register') }}">Register</a></li>-->
                         @else
+                            @if(Session::has('eventSelectedByUserForReceipt'))
+                                <li><a href="{{ route('changeEvent') }}">{{ \App\Event::where('id', session('eventSelectedByUserForReceipt'))->first()->name }}</a></li>
+                            @endif
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    Receipt <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="{{ route('newReceiptView') }}">New Receipt</a></li>
+                                    <li><a href="{{ route('viewFullyPaid') }}">View Fully Paid Receipts</a></li>
+                                    <li><a href="{{ route('viewNotFullyPaid') }}">View Not Fully Paid Receipts</a></li>
+                                    <li><a href="{{ route('changeEvent') }}">Change Event</a></li>
+                                    <?php 
+                                        if (Auth::guest())
+                                        {
+                                            $event = \App\Event::where('id', session('eventSelectedByUserForReceipt'))->first();
+                                            $privileged = $event->organization->receipts_handle_privileges;
+                                            $privileged = json_decode($privileged);
+                                            $user = \Auth::user();
+                                            $user_privilege = $user->roles()->where('organization_id', $event->organization->id)->get();
+                                            $privileges = [];
+                                            foreach ($user_privilege as $userprivilege) {
+                                                array_push($privileges, $userprivilege->privilege_level);
+                                            }
+                                            if (!empty(array_intersect($privileges, $privileged))) {
+                                    ?>
+                                                <li><a href="{{ route('dateWisePayment') }}">Date Wise Payment</a></li>
+                                    <?php 
+                                            }
+                                        }
+                                    ?>
+                                </ul>
+                            </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -76,6 +110,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    
     @yield('scripts')
 </body>
 </html>

@@ -7,3 +7,43 @@ Receipt System:
 	Department
 	Year
 	Amount Paid
+<table style="margin: 10px"><tr><th>Number of people in group</th><th>Price for them</th></tr><tr><td><input type="text" name="noOfPeople[]"></td><td><input type="text" name="priceForGroup[]"></td></tr></table>
+$(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    var add_button      = $(".add_field_button"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+});
+
+$('#numberInGroups').on('change', function (e) {
+
+            var optionSelected = $("option:selected", this);
+            var valueSelected = this.value;
+            var name = document.getElementById("number-of-name-inputs");
+            var email = document.getElementById("number-of-email-inputs");
+            var mobile = document.getElementById("number-of-mobile-inputs");
+            //alert(valueSelected);
+            $('.name-class').remove();
+            $('.email-class').remove();
+            $('.mobile-class').remove();
+            var str1 = "<input type='text' class='form-control name-class' name='name[]'' value='{{ old('name."+i+"') }}' required>";
+            var str2 = "<input type='text' class='form-control email-class' name='email[]'' value='{{ old('email."+i+"') }}' required>";
+            var str3 = "<input type='text' class='form-control mobile_number-class' name='mobile_number[]'' value='{{ old('mobile_number."+i+"') }}' required>";
+            for (i = 0; i < valueSelected; i++) {
+                name.insertAdjacentHTML( 'beforeend', str1 );
+                email.insertAdjacentHTML('beforeend', str2);
+                mobile.insertAdjacentHTML('beforeend', str3);
+            }
+        });

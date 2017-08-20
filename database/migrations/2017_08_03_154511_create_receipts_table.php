@@ -25,6 +25,7 @@ class CreateReceiptsTable extends Migration
             $table->bigInteger('mobile_number');
             $table->bigInteger('alternate_number');
             $table->integer('amount');
+            $table->integer('group_id')->nullable();
             $table->timestamps();
         });
     }

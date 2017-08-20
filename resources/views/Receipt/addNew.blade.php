@@ -14,20 +14,44 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+                <div class="panel-heading">Register for {{ $event->name }}</div>
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('saveReceipt') }}">
                         {{ csrf_field() }}
+
+                        <div class="form-group{{ $errors->has('numberInGroups') ? ' has-error' : '' }}">
+                            <label for="numberInGroups" class="col-md-4 control-label">Number In Groups</label>
+
+                            <div class="col-md-6">
+                                <?php   
+                                    $numberInGroups = $event->numberInGroups;
+                                    $numberInGroups = json_decode($numberInGroups);          
+                                ?>
+                                <select id="numberInGroups" class="form-control" name="numberInGroups" value="{{ old('numberInGroups') }}" required autofocus>
+                                    <option value="1">1</option>
+                                    @foreach ($numberInGroups as $number)
+                                        <option value="{{ $number }}">{{ $number }}</option>
+                                    @endforeach
+                                </select>
+
+                                @if ($errors->has('numberInGroups'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('numberInGroups') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Name</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                                <div id="number-of-name-inputs"><input type="text" class="form-control name-class" name="name[]" value="{{ old('name.0') }}" required></div>
+                                
 
-                                @if ($errors->has('name'))
+                                @if ($errors->has('name.0'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
+                                        <strong>{{ $errors->first('name.0') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -37,11 +61,12 @@
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
+                                <div id="number-of-email-inputs">
+                                    <input type="email" class="form-control email-class" name="email[]" value="{{ old('email.0') }}" required>
+                                </div>
+                                @if ($errors->has('email.0'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>{{ $errors->first('email.0') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -93,11 +118,15 @@
                             <label for="mobile_number" class="col-md-4 control-label">Mobile Number</label>
 
                             <div class="col-md-6">
-                                <input id="mobile_number" type="mobile_number" class="form-control" name="mobile_number" value="{{ old('mobile_number') }}" required>
+                                
 
-                                @if ($errors->has('mobile_number'))
+                                <div id="number-of-mobile-inputs">
+                                    <input type="text" class="form-control mobile-class" name="mobile_number[]" value="{{ old('mobile_number.0') }}" required>
+                                </div>
+
+                                @if ($errors->has('mobile_number.0'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('mobile_number') }}</strong>
+                                        <strong>{{ $errors->first('mobile_number.0') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -145,4 +174,47 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('scripts')
+    <script>
+        $( document ).ready(function() {
+            var valueSelected = $("#numberInGroups").val();
+            var name = document.getElementById("number-of-name-inputs");
+            var email = document.getElementById("number-of-email-inputs");
+            var mobile = document.getElementById("number-of-mobile-inputs");
+            //alert(valueSelected);
+            $('.name-class').remove();
+            $('.email-class').remove();
+            $('.mobile-class').remove();
+            var str1 = "<input type='text' class='form-control name-class' name='name[]' value='{{ old('name."+i+"') }}' required>";
+            var str2 = "<input type='text' class='form-control email-class' name='email[]' value='{{ old('email."+i+"') }}' required>";
+            var str3 = "<input type='text' class='form-control mobile-class' name='mobile_number[]'' value='{{ old('mobile_number."+i+"') }}' required>";
+            for (i = 0; i < valueSelected; i++) {
+                name.insertAdjacentHTML( 'beforeend', str1 );
+                email.insertAdjacentHTML('beforeend', str2);
+                mobile.insertAdjacentHTML('beforeend', str3);
+            }
+        });
+        $('#numberInGroups').on('change', function (e) {
+
+            var optionSelected = $("option:selected", this);
+            var valueSelected = this.value;
+            var name = document.getElementById("number-of-name-inputs");
+            var email = document.getElementById("number-of-email-inputs");
+            var mobile = document.getElementById("number-of-mobile-inputs");
+            //alert(valueSelected);
+            $('.name-class').remove();
+            $('.email-class').remove();
+            $('.mobile-class').remove();
+            var str1 = "<input type='text' class='form-control name-class' name='name[]' value='{{ old('name."+i+"') }}' required>";
+            var str2 = "<input type='text' class='form-control email-class' name='email[]' value='{{ old('email."+i+"') }}' required>";
+            var str3 = "<input type='text' class='form-control mobile-class' name='mobile_number[]'' value='{{ old('mobile_number."+i+"') }}' required>";
+            for (i = 0; i < valueSelected; i++) {
+                name.insertAdjacentHTML( 'beforeend', str1 );
+                email.insertAdjacentHTML('beforeend', str2);
+                mobile.insertAdjacentHTML('beforeend', str3);
+            }
+        });
+    </script>
 @endsection

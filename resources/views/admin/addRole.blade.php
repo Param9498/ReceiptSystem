@@ -11,7 +11,7 @@
                     <table class="table table-bordered">
                         <tr>
                             <th>Sr. No.</th>
-                            <th>Event</th>
+                            <th>Organization</th>
                             <th>Role</th>  
                             <th>Privilege Level</th>                         
                         </tr>

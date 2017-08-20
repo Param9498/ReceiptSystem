@@ -8,7 +8,8 @@
                 <div class="panel-heading">Hello, Admin</div>
                 <div class="panel-body">
                     <a href="{{ route('addEvent') }}">Add a new event</a><br>
-                    <a href="{{ route('addRole') }}">Add Roles in the event</a><br>
+                    <a href="{{ route('addRole') }}">Add Roles in your Organization</a><br>
+                    <a href="{{ route('addReceiptsHandlePrivileges') }}">Add Privileges that can handle Receipts</a><br>
                     Add Users :- <br>
                     <table class="table table-bordered">
                         <tr>

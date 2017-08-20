@@ -58,5 +58,7 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'websiteAdmin' => \App\Http\Middleware\WebsiteAdminMiddleware::class,
         'OrganizationSelected' => \App\Http\Middleware\OrganizationSelectedMiddleware::class,
+        'ChangeEvent' => \App\Http\Middleware\ChangeEventMiddleware::class,
+        'ReceiptAdmin' => \App\Http\Middleware\ReceiptAdminPrivilegesMiddleware::class,
     ];
 }
