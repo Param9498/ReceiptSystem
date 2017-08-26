@@ -85,10 +85,10 @@ return [
     */
 
     #'username' => env('MAIL_USERNAME'),
-    'username' => 'apikey',
+    'username' => '',
 
     #'password' => env('MAIL_PASSWORD'),
-    'password' => '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',
+    'password' => '',
 
     /*
     |--------------------------------------------------------------------------
