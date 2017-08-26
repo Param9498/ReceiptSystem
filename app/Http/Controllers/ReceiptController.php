@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Events\ReceiptSaved;
 
 class ReceiptController extends Controller
 {
@@ -67,6 +68,8 @@ class ReceiptController extends Controller
 			if($group > 1)
 				$receipt->group_id = $g->id;
 			$receipt->save();
+
+			event(new ReceiptSaved($receipt));
 		}
 		\DB::table('user_amount')->insert([
 			'user_id' => \Auth::user()->id,

@@ -60,11 +60,11 @@
                                     {
                                         continue;
                                     }
-                                    if (!in_array($receipts[$j]->amount, $priceForGroup))
+                                    $numberOfMembersInGroup = $receipts[$j]->group->numberOfReceipts;
+                                    $key = array_search($numberOfMembersInGroup, $numberInGroups);
+                                    $amountToBePaid = $priceForGroup[$key];
+                                    if ($receipts[$j]->amount != $amountToBePaid)
                                     {
-                                        $numberOfMembersInGroup = $receipts[$j]->group->numberOfReceipts;
-                                        $key = array_search($numberOfMembersInGroup, $numberInGroups);
-                                        $amountToBePaid = $priceForGroup[$key];
                                         $rs = \App\Receipt::where('group_id', $receipts[$j]->group_id)->get();
                                 ?>
                                         <tr>

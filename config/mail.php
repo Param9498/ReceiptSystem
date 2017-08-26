@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'mail'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'hello@ecellskncoe.in'),
+        'name' => env('MAIL_FROM_NAME', 'E-Cell SKNCOE'),
     ],
 
     /*
@@ -84,9 +84,11 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    #'username' => env('MAIL_USERNAME'),
+    'username' => 'apikey',
 
-    'password' => env('MAIL_PASSWORD'),
+    #'password' => env('MAIL_PASSWORD'),
+    'password' => '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',
 
     /*
     |--------------------------------------------------------------------------

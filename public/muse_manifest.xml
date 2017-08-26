@@ -1,0 +1,722 @@
+<manifest alg="2" build="2017.0.3.363" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="ecellskncoe.in" resolutions="1x" timestamp="1503264691902">
+  <folder name="css">
+    <file name="site_global.css" crc="4056376302"/>
+    <file name="meetups.css" crc="3976585111" ref="meetups"/>
+    <file name="nomq_meetups.css" crc="415821226" ref="meetups"/>
+    <file name="hackathon.css" crc="195989487" ref="hackathon"/>
+    <file name="nomq_hackathon.css" crc="3949314973" ref="hackathon"/>
+    <file name="index.css" crc="386681152" ref="index"/>
+    <file name="nomq_index.css" crc="12377070" ref="index"/>
+    <file name="iefonts_index.css" crc="176100216" ref="index"/>
+    <file name="econclave.css" crc="4075073379" ref="econclave"/>
+    <file name="nomq_econclave.css" crc="299802520" ref="econclave"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:meetups:hackathon:econclave"/>
+    <file name="museutils.js" crc="46400467" ref="index:meetups:hackathon:econclave"/>
+    <file name="whatinput.js" crc="86476730" ref="index:meetups:hackathon:econclave"/>
+    <file name="museconfig.js" crc="436936948" ref="index:meetups:hackathon:econclave"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="532123423" ref="index:meetups:hackathon:econclave"/>
+    <file name="jquery.watch.js" crc="4178585335" ref="index:meetups:hackathon:econclave"/>
+    <file name="webpro.js" crc="4152390327" ref="index"/>
+    <file name="musewpslideshow.js" crc="380562115" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="3986278607" ref="index"/>
+    <file name="touchswipe.js" crc="4228958816" ref="index"/>
+    <file name="form_check.php" crc="4286608207" ref="index"/>
+    <file name="form_throttle.php" crc="313199896" ref="index"/>
+    <file name="form_process.php" crc="3855659497" ref="index"/>
+    <file name="form-u60178.php" crc="238801673" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="52098982" ref="index:meetups:hackathon:econclave"/>
+    <file name="require.js" crc="85721165" ref="index:meetups:hackathon:econclave"/>
+  </folder>
+  <folder name="images">
+    <file name="e-cell-skncoe-favicon.ico" crc="282699824" ref="index"/>
+    <file name="e-cell logo transparent bg-u15566-fr.png" crc="4229405601" ref="index"/>
+    <file name="index.png" crc="184227374" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="dream-catcher-1904179_640.png" crc="4000196681" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="asdfaaaa.png" crc="443851802" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="discover.png" crc="4221004943" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="binoculars-24235_640.png" crc="3849212514" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="canstock15539909.png" crc="3949203044" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="disrupt.png" crc="268444007" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="wear1.jpg" crc="283705459" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="yellow-926728_1920.jpg" crc="4038690753" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="bulb multicolor.png" crc="219772232" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hack.png" crc="314848068" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="startups.png" crc="74538084" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image1b2b.jpg" crc="369097573" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303216x216.jpg" crc="3935189576" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="action-2277292_1280.jpg" crc="3892039984" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u21721.jpg" crc="506905880" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index:meetups:hackathon:econclave"/>
+    <file name="img_1744.jpg" crc="3930253556" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1762.jpg" crc="4264330440" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image1.jpg" crc="4077025949" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303.jpg" crc="385846056" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1858.jpg" crc="3993973765" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1872.jpg" crc="118887603" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1908.jpg" crc="249417281" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u74207.jpg" crc="3852407782" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1948.jpg" crc="262461468" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u21738.jpg" crc="372904390" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u32239.jpg" crc="396775411" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_176268x45.jpg" crc="357434428" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image164x45.jpg" crc="3887351779" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303-crop-u74129.jpg" crc="24700833" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_185868x45.jpg" crc="530626714" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_187268x45.jpg" crc="177024250" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_190868x45.jpg" crc="4195058903" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u74241.jpg" crc="130393510" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_194868x45.jpg" crc="4057843181" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="snapcode.png" crc="182748944" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="e-cell logo transparent bg-u15566-fr2.png" crc="117191139" ref="index"/>
+    <file name="wear1-u19424-fr.jpg" crc="98961902" ref="index"/>
+    <file name="hack-u18833-fr.png" crc="4026632334" ref="index"/>
+    <file name="rcp royal 2017-18 20170712_175303178x178.jpg" crc="3766966006" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes.jpg" crc="423632257" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742072.jpg" crc="3787814144" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u217382.jpg" crc="372904390" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u322392.jpg" crc="396775411" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303-crop-u741292.jpg" crc="24700833" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742412.jpg" crc="130393510" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="asdfaaaa-u12836-fr.png" crc="60221197" ref="index"/>
+    <file name="discover-u13034-fr.png" crc="343166483" ref="index"/>
+    <file name="disrupt-u30463-fr.png" crc="4197193135" ref="index"/>
+    <file name="wear1-u19424-fr2.jpg" crc="371245634" ref="index"/>
+    <file name="e-cell logo transparent bg-u15566-fr3.png" crc="3921341458" ref="index"/>
+    <file name="rcp royal 2017-18 20170712_175303158x158.jpg" crc="4039404381" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u217212.jpg" crc="3881962987" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742073.jpg" crc="4244218470" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u217383.jpg" crc="372904390" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u322393.jpg" crc="396775411" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303-crop-u741293.jpg" crc="24700833" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742413.jpg" crc="130393510" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="snapcode-u28380-fr.png" crc="385654126" ref="index"/>
+    <file name="discover-u13034-fr2.png" crc="3764647919" ref="index"/>
+    <file name="disrupt-u30463-fr2.png" crc="43752660" ref="index"/>
+    <file name="hack-u18833-fr2.png" crc="406692972" ref="index"/>
+    <file name="rcp royal 2017-18 20170712_175303186x187.jpg" crc="4070606265" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="e-cell logo transparent bg-u15566-fr4.png" crc="536667405" ref="index"/>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u217213.jpg" crc="4248243203" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744674x368.jpg" crc="4120948285" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image1647x458.jpg" crc="3789663077" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303-crop-u74102.jpg" crc="531330222" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742074.jpg" crc="512551850" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u217384.jpg" crc="372904390" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u322394.jpg" crc="396775411" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303-crop-u741294.jpg" crc="24700833" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742414.jpg" crc="130393510" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="wear1-u19424-fr3.jpg" crc="4068864838" ref="index"/>
+    <file name="bulb multicolor-u18731-fr.png" crc="341832747" ref="index"/>
+    <file name="startups-u18935-fr.png" crc="4017959303" ref="index"/>
+    <file name="hack-u18833-fr3.png" crc="3862537634" ref="index"/>
+    <file name="rcp royal 2017-18 20170712_175303156x156.jpg" crc="4251535985" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="e-cell logo transparent bg-u15566-fr5.png" crc="210292012" ref="index"/>
+    <file name="dream-catcher-1904179_640-u16320-fr.png" crc="168519093" ref="index"/>
+    <file name="asdfaaaa-u12836-fr2.png" crc="344176357" ref="index"/>
+    <file name="img_1744-crop-u32224.jpg" crc="84302431" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1762-crop-u32277.jpg" crc="4035103593" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image1-crop-u73998.jpg" crc="366422851" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1858-crop-u32330.jpg" crc="346442188" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1872-crop-u32383.jpg" crc="4226154328" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1908-crop-u32436.jpg" crc="4212200837" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg489x489.jpg" crc="438654886" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1948-crop-u32489.jpg" crc="4230066481" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u217385.jpg" crc="372904390" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u322395.jpg" crc="396775411" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303-crop-u741295.jpg" crc="24700833" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742415.jpg" crc="130393510" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="snapcode-u28380-fr2.png" crc="4052494594" ref="index"/>
+    <file name="discover-u13034-fr3.png" crc="463780253" ref="index"/>
+    <file name="canstock15539909-u16436-fr.png" crc="81991356" ref="index"/>
+    <file name="disrupt-u30463-fr3.png" crc="3997704696" ref="index"/>
+    <file name="e-cell logo transparent bg-u15566-fr6.png" crc="4153647028" ref="index"/>
+    <file name="canstock15539909-u16436-fr2.png" crc="169144517" ref="index"/>
+    <file name="discover-u13034-fr4.png" crc="49976732" ref="index"/>
+    <file name="dream-catcher-1904179_640-u16320-fr2.png" crc="15806449" ref="index"/>
+    <file name="asdfaaaa-u12836-fr3.png" crc="3869722518" ref="index"/>
+    <file name="disrupt-u30463-fr4.png" crc="3978242594" ref="index"/>
+    <file name="wear1-u19424-fr4.jpg" crc="96621102" ref="index"/>
+    <file name="hack-u18833-fr4.png" crc="500709915" ref="index"/>
+    <file name="image1b2b383x270.jpg" crc="342226930" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303112x113.jpg" crc="481378429" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes425x425.jpg" crc="4211430675" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u322242.jpg" crc="182555640" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1762-crop-u322772.jpg" crc="3993148443" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image1-crop-u739982.jpg" crc="513838571" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303425x425.jpg" crc="3844189031" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1858-crop-u323302.jpg" crc="142678697" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1872-crop-u323832.jpg" crc="4052989498" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1908-crop-u324362.jpg" crc="3803473861" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg425x425.jpg" crc="213069498" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1948-crop-u324892.jpg" crc="520831069" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u217386.jpg" crc="372904390" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u322396.jpg" crc="396775411" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303-crop-u741296.jpg" crc="24700833" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742416.jpg" crc="130393510" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="e-cell logo transparent bg-u15566-fr7.png" crc="334475496" ref="index"/>
+    <file name="asdfaaaa-u12836-fr4.png" crc="3934786147" ref="index"/>
+    <file name="canstock15539909-u16436-fr3.png" crc="4156940420" ref="index"/>
+    <file name="disrupt-u30463-fr5.png" crc="435533287" ref="index"/>
+    <file name="wear1-u19424-fr5.jpg" crc="335621411" ref="index"/>
+    <file name="image1b2b361x255.jpg" crc="285442811" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303116x116.jpg" crc="4168068554" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u217214.jpg" crc="418384146" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u322243.jpg" crc="74625612" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1762435x290.jpg" crc="3953865657" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image1411x290.jpg" crc="473257997" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303-crop-u741022.jpg" crc="375656995" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1858435x290.jpg" crc="27402950" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1872435x290.jpg" crc="3988289177" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1908435x290.jpg" crc="302045135" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742075.jpg" crc="4150150758" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1948435x290.jpg" crc="3836141683" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u217387.jpg" crc="372904390" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u322397.jpg" crc="396775411" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303-crop-u741297.jpg" crc="24700833" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742417.jpg" crc="130393510" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="dream-catcher-1904179_640-u16320-fr3.png" crc="3774549589" ref="index"/>
+    <file name="e-cell logo transparent bg-u15566-fr8.png" crc="3912842194" ref="index"/>
+    <file name="wear1-u19424-fr6.jpg" crc="7453448" ref="index"/>
+    <file name="bulb multicolor-u18731-fr2.png" crc="3824483530" ref="index"/>
+    <file name="hack-u18833-fr5.png" crc="4109849141" ref="index"/>
+    <file name="image1b2b306x216.jpg" crc="204460551" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303129x129.jpg" crc="3899046340" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="asdfaaaa-u12836-fr5.png" crc="4226189312" ref="index"/>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes265x265.jpg" crc="525411828" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u322244.jpg" crc="3915464364" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1762-crop-u322773.jpg" crc="26079640" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image1-crop-u739983.jpg" crc="529089875" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303265x265.jpg" crc="4289351188" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1858-crop-u323303.jpg" crc="109010159" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1872253x169.jpg" crc="3993250648" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1908-crop-u324363.jpg" crc="4027475337" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg265x265.jpg" crc="353852011" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1948-crop-u324893.jpg" crc="4028093860" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1f72fd8a4d95e22f9e92c74bf9c88e12--calligraphy-quotes-calligraphy-inspiration-quotes-crop-u217388.jpg" crc="372904390" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="img_1744-crop-u322398.jpg" crc="396775411" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rcp royal 2017-18 20170712_175303-crop-u741298.jpg" crc="24700833" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="digital india logo jpg-crop-u742418.jpg" crc="130393510" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="canstock15539909-u16436-fr4.png" crc="3785581702" ref="index"/>
+    <file name="discover-u13034-fr5.png" crc="3784990480" ref="index"/>
+    <file name="disrupt-u30463-fr6.png" crc="3794195956" ref="index"/>
+    <file name="meetups-favicon.ico" crc="282699824" ref="meetups"/>
+    <file name="meetups.png" crc="525069542" ref="meetups">
+      <caption webpage="meetups" alt=""/>
+      <caption webpage="meetups" alt=""/>
+    </file>
+    <file name="e-cell logo transparent bg-u35370-fr.png" crc="259879161" ref="meetups"/>
+    <file name="meetups lol.png" crc="4272229351" ref="meetups">
+      <caption webpage="meetups" alt=""/>
+      <caption webpage="meetups" alt=""/>
+      <caption webpage="meetups" alt=""/>
+      <caption webpage="meetups" alt=""/>
+      <caption webpage="meetups" alt=""/>
+    </file>
+    <file name="sinhgad-logo-colour-blacktext.png" crc="4044109746" seo="true" ref="meetups:hackathon:econclave">
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="meetups" alt=""/>
+      <caption webpage="hackathon" alt=""/>
+      <caption webpage="hackathon" alt=""/>
+      <caption webpage="hackathon" alt=""/>
+      <caption webpage="hackathon" alt=""/>
+      <caption webpage="hackathon" alt=""/>
+      <caption webpage="hackathon" alt=""/>
+      <caption webpage="hackathon" alt=""/>
+      <caption webpage="hackathon" alt=""/>
+    </file>
+    <file name="meetups-u35359-fr.png" crc="292568380" ref="meetups"/>
+    <file name="e-cell logo transparent bg-u35370-fr2.png" crc="3871952791" ref="meetups"/>
+    <file name="meetups lol-u35763-fr.png" crc="192601449" ref="meetups"/>
+    <file name="meetups-u35359-fr2.png" crc="482027871" ref="meetups"/>
+    <file name="e-cell logo transparent bg-u35370-fr3.png" crc="407629802" ref="meetups"/>
+    <file name="meetups-u35359-fr3.png" crc="452462377" ref="meetups"/>
+    <file name="e-cell logo transparent bg-u35370-fr4.png" crc="72287312" ref="meetups"/>
+    <file name="sinhgad-logo-colour-blacktext-u35378-fr.png" crc="499867450" ref="meetups"/>
+    <file name="meetups-u35359-fr4.png" crc="4014632470" ref="meetups"/>
+    <file name="e-cell logo transparent bg-u35370-fr5.png" crc="241505900" ref="meetups"/>
+    <file name="sinhgad-logo-colour-blacktext-u35378-fr2.png" crc="3820015514" ref="meetups"/>
+    <file name="meetups-u35359-fr5.png" crc="525161997" ref="meetups"/>
+    <file name="e-cell logo transparent bg-u35370-fr6.png" crc="3796358855" ref="meetups"/>
+    <file name="sinhgad-logo-colour-blacktext-u35378-fr3.png" crc="4223993087" ref="meetups"/>
+    <file name="meetups-u35359-fr6.png" crc="3941640731" ref="meetups"/>
+    <file name="e-cell logo transparent bg-u35370-fr7.png" crc="446525372" ref="meetups"/>
+    <file name="sinhgad-logo-colour-blacktext-u35378-fr4.png" crc="4126431156" ref="meetups"/>
+    <file name="hackathon-favicon.ico" crc="282699824" ref="hackathon"/>
+    <file name="workplace-2303849_1920.jpg" crc="190068937" ref="hackathon">
+      <caption webpage="hackathon" alt=""/>
+    </file>
+    <file name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.png" crc="4269056427" ref="hackathon">
+      <caption webpage="hackathon" alt=""/>
+      <caption webpage="hackathon" alt=""/>
+    </file>
+    <file name="hackathon.png" crc="3817879578" ref="hackathon">
+      <caption webpage="hackathon" alt=""/>
+    </file>
+    <file name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-u35278-fr.png" crc="4243225707" ref="hackathon"/>
+    <file name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-u35278-fr2.png" crc="429404911" ref="hackathon"/>
+    <file name="hackathon-u72624-fr.png" crc="219502742" ref="hackathon"/>
+    <file name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-u35278-fr3.png" crc="38136346" ref="hackathon"/>
+    <file name="hackathon-u72624-fr2.png" crc="145592851" ref="hackathon"/>
+    <file name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-u35278-fr4.png" crc="531899842" ref="hackathon"/>
+    <file name="hackathon-u72624-fr3.png" crc="95978247" ref="hackathon"/>
+    <file name="hackathon-u72624-fr4.png" crc="4023554195" ref="hackathon"/>
+    <file name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-u35278-fr5.png" crc="26409232" ref="hackathon"/>
+    <file name="hackathon-u72624-fr5.png" crc="4171149691" ref="hackathon"/>
+    <file name="econclave-favicon.ico" crc="282699824" ref="econclave"/>
+    <file name="bbbbbbbbbbbbbbbbbbbbbbbbbbbbb.jpg" crc="504100140" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="2k17.png" crc="3779850054" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="new hand and bulb .png" crc="4062422323" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="can-2025770_1280.png" crc="477896818" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="talk.png" crc="284296943" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="pannel.png" crc="139692823" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="business-2409456_640.png" crc="4244311975" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="group-1825503_1920.png" crc="4037056192" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="pitching.png" crc="306761689" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="tablet-2188368_1920.jpg" crc="478047208" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="about.png" crc="4226869942" ref="econclave">
+      <caption webpage="econclave" alt=""/>
+    </file>
+    <file name="u34434-6.png" crc="418638949" ref="econclave"/>
+    <file name="pannel-u51184-fr.png" crc="155858377" ref="econclave"/>
+    <file name="talk-u51172-fr.png" crc="4125521109" ref="econclave"/>
+    <file name="u34434-62.png" crc="4115047232" ref="econclave"/>
+    <file name="group-1825503_1920-u33925-fr.png" crc="4182989183" ref="econclave"/>
+    <file name="pitching-u51196-fr.png" crc="4155481447" ref="econclave"/>
+    <file name="business-2409456_640-u33936-fr.png" crc="209424508" ref="econclave"/>
+    <file name="pannel-u51184-fr2.png" crc="523760198" ref="econclave"/>
+    <file name="can-2025770_1280-u33888-fr.png" crc="487831497" ref="econclave"/>
+    <file name="u34434-63.png" crc="204795887" ref="econclave"/>
+    <file name="talk-u51172-fr2.png" crc="4006441619" ref="econclave"/>
+    <file name="2k17-u51160-fr.png" crc="3845062159" ref="econclave"/>
+    <file name="can-2025770_1280-u33888-fr2.png" crc="4271029910" ref="econclave"/>
+    <file name="group-1825503_1920-u33925-fr2.png" crc="173878730" ref="econclave"/>
+    <file name="business-2409456_640-u33936-fr2.png" crc="4237949306" ref="econclave"/>
+    <file name="pannel-u51184-fr3.png" crc="3857458944" ref="econclave"/>
+    <file name="u34434-64.png" crc="344096761" ref="econclave"/>
+    <file name="2k17-u51160-fr2.png" crc="3842154034" ref="econclave"/>
+    <file name="business-2409456_640-u33936-fr3.png" crc="174064960" ref="econclave"/>
+    <file name="can-2025770_1280-u33888-fr3.png" crc="3858410951" ref="econclave"/>
+    <file name="group-1825503_1920-u33925-fr3.png" crc="225323243" ref="econclave"/>
+    <file name="talk-u51172-fr3.png" crc="453380834" ref="econclave"/>
+    <file name="pannel-u51184-fr4.png" crc="3939724523" ref="econclave"/>
+    <file name="pitching-u51196-fr2.png" crc="4148502040" ref="econclave"/>
+    <file name="u34434-65.png" crc="3870717035" ref="econclave"/>
+    <file name="bbbbbbbbbbbbbbbbbbbbbbbbbbbbb-u35088-fr.jpg" crc="224929327" ref="econclave"/>
+    <file name="2k17-u51160-fr3.png" crc="3778354935" ref="econclave"/>
+    <file name="group-1825503_1920-u33925-fr4.png" crc="4002537132" ref="econclave"/>
+    <file name="business-2409456_640-u33936-fr4.png" crc="3826752441" ref="econclave"/>
+    <file name="pitching-u51196-fr3.png" crc="3934071169" ref="econclave"/>
+    <file name="can-2025770_1280-u33888-fr4.png" crc="3954085720" ref="econclave"/>
+    <file name="talk-u51172-fr4.png" crc="3759743720" ref="econclave"/>
+    <file name="pannel-u51184-fr5.png" crc="469591820" ref="econclave"/>
+    <file name="u34434-66.png" crc="453180953" ref="econclave"/>
+    <file name="2k17-u51160-fr4.png" crc="467718497" ref="econclave"/>
+    <file name="new hand and bulb -u29304-fr.png" crc="199111644" ref="econclave"/>
+    <file name="group-1825503_1920-u33925-fr5.png" crc="16957896" ref="econclave"/>
+    <file name="business-2409456_640-u33936-fr5.png" crc="4037343727" ref="econclave"/>
+    <file name="pitching-u51196-fr4.png" crc="3901330560" ref="econclave"/>
+    <file name="about-u51252-fr.png" crc="4043663470" ref="econclave"/>
+    <file name="talk-u51172-fr5.png" crc="4167797495" ref="econclave"/>
+    <file name="can-2025770_1280-u33888-fr5.png" crc="3845992490" ref="econclave"/>
+    <file name="pannel-u51184-fr6.png" crc="3960261888" ref="econclave"/>
+    <file name="u34434-67.png" crc="47923128" ref="econclave"/>
+    <file name="bbbbbbbbbbbbbbbbbbbbbbbbbbbbb-u35088-fr2.jpg" crc="3866019249" ref="econclave"/>
+    <file name="2k17-u51160-fr5.png" crc="3910359538" ref="econclave"/>
+    <file name="business-2409456_640-u33936-fr6.png" crc="43106115" ref="econclave"/>
+    <file name="pitching-u51196-fr5.png" crc="3927399838" ref="econclave"/>
+    <file name="about-u51252-fr2.png" crc="4230996719" ref="econclave"/>
+    <file name="can-2025770_1280-u33888-fr6.png" crc="4082593473" ref="econclave"/>
+    <file name="talk-u51172-fr6.png" crc="4137527662" ref="econclave"/>
+    <file name="group-1825503_1920-u33925-fr6.png" crc="142567115" ref="econclave"/>
+    <file name="u34434-68.png" crc="463113850" ref="econclave"/>
+    <file name="pannel-u51184-fr7.png" crc="339209536" ref="econclave"/>
+  </folder>
+  <file name="index.html" crc="4257636106" seo="true" mt="1503263129724" redirect="true"/>
+  <file name="meetups.html" crc="39538204" seo="true" mt="1503246660816" redirect="true"/>
+  <file name="hackathon.html" crc="4286071256" seo="true" mt="1503246492039" redirect="true"/>
+  <file name="econclave.html" crc="369169551" seo="true" mt="1503246682472" redirect="true"/>
+</manifest>

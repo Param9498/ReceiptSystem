@@ -1,0 +1,1 @@
+<img src="images/qrcode/12.png"></img>

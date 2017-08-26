@@ -20,6 +20,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/econclave', function(){
+	return view('econclave');
+})->name('viewEconclavePage');
+
+Route::get('/hackathon', function(){
+	return view('hackathon');
+})->name('viewHackathonPage');
+
+Route::get('/meetups', function(){
+	return view('meetups');
+})->name('viewMeetupPage');
+
 //Auth::routes();
 
 //Auth
@@ -263,6 +275,12 @@ Route::get('/admin', function(){
 			return view('Receipt.receiptMaster');
 		})->name('receiptMaster')->middleware('auth', 'ChangeEvent');
 //	}
+
+
+Route::get('/test5', function(){
+	dd(base_path());
+	
+});
 
 
 

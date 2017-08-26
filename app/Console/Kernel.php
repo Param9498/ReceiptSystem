@@ -26,6 +26,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+        $schedule->command('queue:work')->name('monitor_queue_listener')->everyMinute();
     }
 
     /**

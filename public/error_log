@@ -1,0 +1,213 @@
+[20-Aug-2017 19:35:34 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:35:37 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:35:45 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:39:37 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:41:26 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:41:30 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:47:30 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:49:28 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:49:56 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:52:48 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:54:49 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:54:52 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:58:30 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 19:58:57 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 20:00:16 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 20:00:18 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 20:03:20 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ecell1si/public_html/public/index.php on line 50
+[20-Aug-2017 20:19:56 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[20-Aug-2017 20:19:59 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[20-Aug-2017 20:20:00 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[20-Aug-2017 20:20:22 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[23-Aug-2017 21:18:19 Asia/Kolkata] PHP Warning:  Uncaught ErrorException: require(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ecell1si/ecellwebsite/routes/web.php:284
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/routes/web.php(284): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(../vend...', '/home/ecell1si/...', 284, Array)
+#1 /home/ecell1si/ecellwebsite/routes/web.php(284): require()
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(189): Illuminate\Routing\Router->{closure}()
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(163): Illuminate\Routing\Route->runCallable()
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Router.php(574): Illuminate\Routing\Route->run()
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/ecell1si/ecellwebsite/vendo in /home/ecell1si/ecellwebsite/routes/web.php on line 284
+[23-Aug-2017 21:18:19 Asia/Kolkata] PHP Fatal error:  Illuminate\Routing\Router::{closure}(): Failed opening required '../vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ecell1si/ecellwebsite/routes/web.php on line 284
+[23-Aug-2017 21:31:14 Asia/Kolkata] PHP Warning:  Uncaught ErrorException: require(/home/ecell1si/ecellwebsite/vendor/sendgrid-php/vendor/autoload.php): failed to open stream: No such file or directory in /home/ecell1si/ecellwebsite/vendor/sendgrid-php/sendgrid-php.php:2
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/sendgrid-php/sendgrid-php.php(2): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/e...', '/home/ecell1si/...', 2, Array)
+#1 /home/ecell1si/ecellwebsite/vendor/sendgrid-php/sendgrid-php.php(2): require()
+#2 /home/ecell1si/ecellwebsite/routes/web.php(286): require('/home/ecell1si/...')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(189): Illuminate\Routing\Router->{closure}()
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(163): Illuminate\Routing\Route->runCallable()
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Router.php(574): Illuminate\Routing\Route->run()
+#6 /home/ecell1si/ecellwebsite/vendor in /home/ecell1si/ecellwebsite/vendor/sendgrid-php/sendgrid-php.php on line 2
+[23-Aug-2017 21:31:14 Asia/Kolkata] PHP Fatal error:  Illuminate\Routing\Router::main(): Failed opening required '/home/ecell1si/ecellwebsite/vendor/sendgrid-php/vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ecell1si/ecellwebsite/vendor/sendgrid-php/sendgrid-php.php on line 2
+[23-Aug-2017 21:31:38 Asia/Kolkata] PHP Warning:  Uncaught ErrorException: require(/home/ecell1si/ecellwebsite/vendor/sendgrid-php/vendor/autoload.php): failed to open stream: No such file or directory in /home/ecell1si/ecellwebsite/vendor/sendgrid-php/sendgrid-php.php:2
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/sendgrid-php/sendgrid-php.php(2): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/e...', '/home/ecell1si/...', 2, Array)
+#1 /home/ecell1si/ecellwebsite/vendor/sendgrid-php/sendgrid-php.php(2): require()
+#2 /home/ecell1si/ecellwebsite/routes/web.php(286): require('/home/ecell1si/...')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(189): Illuminate\Routing\Router->{closure}()
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(163): Illuminate\Routing\Route->runCallable()
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Router.php(574): Illuminate\Routing\Route->run()
+#6 /home/ecell1si/ecellwebsite/vendor in /home/ecell1si/ecellwebsite/vendor/sendgrid-php/sendgrid-php.php on line 2
+[23-Aug-2017 21:31:38 Asia/Kolkata] PHP Fatal error:  Illuminate\Routing\Router::main(): Failed opening required '/home/ecell1si/ecellwebsite/vendor/sendgrid-php/vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ecell1si/ecellwebsite/vendor/sendgrid-php/sendgrid-php.php on line 2
+[23-Aug-2017 13:17:16 America/New_York] PHP Warning:  require(/home/ecell1si/public_html/../ecellwebsite/bootstrap/autoload.php): failed to open stream: No such file or directory in /home/ecell1si/public_html/index.php on line 22
+[23-Aug-2017 13:17:16 America/New_York] PHP Fatal error:  require(): Failed opening required '/home/ecell1si/public_html/../ecellwebsite/bootstrap/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ecell1si/public_html/index.php on line 22
+[23-Aug-2017 22:55:11 Asia/Kolkata] PHP Warning:  Uncaught ErrorException: require(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ecell1si/ecellwebsite/routes/web.php:284
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/routes/web.php(284): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(../vend...', '/home/ecell1si/...', 284, Array)
+#1 /home/ecell1si/ecellwebsite/routes/web.php(284): require()
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(189): Illuminate\Routing\Router->{closure}()
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(163): Illuminate\Routing\Route->runCallable()
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Router.php(574): Illuminate\Routing\Route->run()
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/ecell1si/ecellwebsite/vendo in /home/ecell1si/ecellwebsite/routes/web.php on line 284
+[23-Aug-2017 22:55:11 Asia/Kolkata] PHP Fatal error:  Illuminate\Routing\Router::{closure}(): Failed opening required '../vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ecell1si/ecellwebsite/routes/web.php on line 284
+[23-Aug-2017 22:55:13 Asia/Kolkata] PHP Warning:  Uncaught ErrorException: require(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ecell1si/ecellwebsite/routes/web.php:284
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/routes/web.php(284): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(../vend...', '/home/ecell1si/...', 284, Array)
+#1 /home/ecell1si/ecellwebsite/routes/web.php(284): require()
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(189): Illuminate\Routing\Router->{closure}()
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(163): Illuminate\Routing\Route->runCallable()
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Router.php(574): Illuminate\Routing\Route->run()
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/ecell1si/ecellwebsite/vendo in /home/ecell1si/ecellwebsite/routes/web.php on line 284
+[23-Aug-2017 22:55:13 Asia/Kolkata] PHP Fatal error:  Illuminate\Routing\Router::{closure}(): Failed opening required '../vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ecell1si/ecellwebsite/routes/web.php on line 284
+[23-Aug-2017 22:58:44 Asia/Kolkata] PHP Warning:  Uncaught ErrorException: require(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ecell1si/ecellwebsite/routes/web.php:301
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/routes/web.php(301): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(../vend...', '/home/ecell1si/...', 301, Array)
+#1 /home/ecell1si/ecellwebsite/routes/web.php(301): require()
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(189): Illuminate\Routing\Router->{closure}()
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(163): Illuminate\Routing\Route->runCallable()
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Router.php(574): Illuminate\Routing\Route->run()
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/ecell1si/ecellwebsite/vendo in /home/ecell1si/ecellwebsite/routes/web.php on line 301
+[23-Aug-2017 22:58:44 Asia/Kolkata] PHP Fatal error:  Illuminate\Routing\Router::{closure}(): Failed opening required '../vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ecell1si/ecellwebsite/routes/web.php on line 301
+[23-Aug-2017 23:18:39 Asia/Kolkata] PHP Warning:  Uncaught ErrorException: require(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ecell1si/ecellwebsite/routes/web.php:301
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/routes/web.php(301): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(../vend...', '/home/ecell1si/...', 301, Array)
+#1 /home/ecell1si/ecellwebsite/routes/web.php(301): require()
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(189): Illuminate\Routing\Router->{closure}()
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(163): Illuminate\Routing\Route->runCallable()
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Router.php(574): Illuminate\Routing\Route->run()
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/ecell1si/ecellwebsite/vendo in /home/ecell1si/ecellwebsite/routes/web.php on line 301
+[23-Aug-2017 23:18:39 Asia/Kolkata] PHP Fatal error:  Illuminate\Routing\Router::{closure}(): Failed opening required '../vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ecell1si/ecellwebsite/routes/web.php on line 301
+[23-Aug-2017 23:29:33 Asia/Kolkata] PHP Warning:  Uncaught ErrorException: require(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ecell1si/ecellwebsite/routes/web.php:284
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/routes/web.php(284): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(../vend...', '/home/ecell1si/...', 284, Array)
+#1 /home/ecell1si/ecellwebsite/routes/web.php(284): require()
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(189): Illuminate\Routing\Router->{closure}()
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(163): Illuminate\Routing\Route->runCallable()
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Router.php(574): Illuminate\Routing\Route->run()
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/ecell1si/ecellwebsite/vendo in /home/ecell1si/ecellwebsite/routes/web.php on line 284
+[23-Aug-2017 23:29:33 Asia/Kolkata] PHP Fatal error:  Illuminate\Routing\Router::{closure}(): Failed opening required '../vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ecell1si/ecellwebsite/routes/web.php on line 284
+[23-Aug-2017 23:29:33 Asia/Kolkata] PHP Warning:  Uncaught ErrorException: require(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ecell1si/ecellwebsite/routes/web.php:284
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/routes/web.php(284): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(../vend...', '/home/ecell1si/...', 284, Array)
+#1 /home/ecell1si/ecellwebsite/routes/web.php(284): require()
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(189): Illuminate\Routing\Router->{closure}()
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Route.php(163): Illuminate\Routing\Route->runCallable()
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Router.php(574): Illuminate\Routing\Route->run()
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#6 /home/ecell1si/ecellwebsite/vendo in /home/ecell1si/ecellwebsite/routes/web.php on line 284
+[23-Aug-2017 23:29:33 Asia/Kolkata] PHP Fatal error:  Illuminate\Routing\Router::{closure}(): Failed opening required '../vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ecell1si/ecellwebsite/routes/web.php on line 284
+[23-Aug-2017 15:32:33 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[23-Aug-2017 15:32:39 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[23-Aug-2017 15:32:41 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[23-Aug-2017 15:32:42 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[23-Aug-2017 15:32:42 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[23-Aug-2017 15:32:46 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[23-Aug-2017 15:32:49 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[23-Aug-2017 15:32:52 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[23-Aug-2017 15:32:53 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(269): app('config') in /home/ecell1si/ecellwebsite/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
